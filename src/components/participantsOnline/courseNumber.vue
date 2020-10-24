@@ -1,17 +1,16 @@
 <template>
  <div>
-    <participantsOnline></participantsOnline>
+this is courseNumberss
  </div>
 </template>
 
 <script>
-import participantsOnline from './participantsOnline/participantsOnline.vue'
  export default {
    name: '',
    props: {
    },
    components: {
-participantsOnline
+
    },
    data () {
      return {
