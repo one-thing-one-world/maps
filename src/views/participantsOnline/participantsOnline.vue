@@ -89,7 +89,7 @@ export default {
   .title {
     height: 90rh;
     color: #50e3c2;
-    font-size: 36px;
+    font-size: 36rw;
     font-family: PingFangSC-Semibold;
   }
 

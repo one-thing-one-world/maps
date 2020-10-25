@@ -1,5 +1,6 @@
 <template>
   <div>
+
      <div id="main" class="studyTime r1" ></div>
     
   </div>
@@ -27,6 +28,7 @@ export default {
         showBackground: true,
         backgroundStyle: {
             color: 'rgba(220, 220, 220, 0.8)'
+            
         }
     }]
       },
@@ -34,22 +36,21 @@ export default {
   },
   methods: {
     //实例化图标
-    autoMyChart() {
-      var myChart = echarts.init(document.getElementById("main"));
-      myChart.setOption(this.option);
+    initChart() {
+      const chart = echarts.init(document.getElementById("main"));
+      chart.setOption(this.option);
     },
   },
   mounted() {
-    this.autoMyChart()
+    this.initChart()
   },
-  watch: {},
-  computed: {},
+
 };
 </script>
 
 <style lang="scss" scoped>
   .studyTime{
-  width: 455rw;
-  height: 234rh;
+  width: 397rw;
+  height: 120rh;
 }
 </style>
